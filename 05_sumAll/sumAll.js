@@ -3,7 +3,7 @@ const sumAll = function (num1, num2) {
   let max = Math.max(num1, num2);
   let sum = 0;
 
-  if (min < 0) {
+  if (min < 0 || typeof num2 !== "number") {
     return "ERROR";
   } else if (min >= 0) {
     for (let i = min; i <= max; i++) {
